@@ -22,7 +22,9 @@ int main(int argc, const char * argv[]) {
        // NSLog(@"Recurvice reverse string: %@", [NSString stringWithFormat:@"%c",reverseString(@"Welcome", 6)]);
         
 //        sumLargNumbers();
-        sumofNxNMatrix();
+//        sumofNxNMatrix();
+//        fractionOfPrecision();
+        stairCase(6, 0, '#');
     }
     return 0;
 }

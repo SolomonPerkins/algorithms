@@ -59,6 +59,82 @@ void sumofNxNMatrix(){
         secondary_dialog_sum = secondary_dialog_sum + matrix[row][column];
     }
     printf("%d", abs(primary_dialog_sum - secondary_dialog_sum));
+};
+
+/***
+ *https://www.hackerrank.com/challenges/plus-minus
+ * Fraction of each precision: % of positive, negative and zero
+ *
+ *
+ */
+void fractionOfPrecision(){
+    int n,
+    total[3] = {0};
+    
+    scanf("%d", &n);
+    float array[n];
+    
+    for(int index = 0; index < n ; index++){
+        scanf("%f", &array[index]);
+
+        if(array[index] <= 0 ){
+            if(array[index] == 0) {
+                total[2] += 1;
+            }
+            else {
+                total[1] += 1;
+            }
+        }
+        else {
+            total[0] +=1;
+        }
+    }
+    
+    for(int index =0; index < 3; index++) {
+        int result = total[index];
+        printf("%.6f\n", (float)result/n);
+    }
+    
 }
+
+/***
+ https://www.hackerrank.com/challenges/staircase
+ Staircase: print a stair case based on N input
+ eg. N = 3
+   #
+  ##
+ ###
+ */
+
+//Build each row of step
+void buildSteps(int remaining,char block){
+    if(remaining < 0){
+        return;
+    }
+    printf("%c", block);
+    buildSteps(remaining-1, block);
+};
+//Clears the path to where step should begin creating each row of steps
+void clearPath(int block){
+    if(block ==0){
+        return;
+    }
+    printf(" ");
+    clearPath(block -1);
+}
+//Handles building of the stair case.
+void stairCase(int n, int width,char block){
+    if(n == 0){
+        return;
+    }
+    clearPath(n-1);
+    //Build each row of step
+    buildSteps(width, block);
+    //Move to the next row.
+    printf("\n");
+    stairCase(n - 1, width+1, block);
+};
+
+
 
 #endif /* Warmup_h */

@@ -24,7 +24,8 @@ int main(int argc, const char * argv[]) {
 //        sumLargNumbers();
 //        sumofNxNMatrix();
 //        fractionOfPrecision();
-        stairCase(6, 0, '#');
+//        stairCase(50, 0, '#');
+        convertToArmyTime();
     }
     return 0;
 }

@@ -137,4 +137,33 @@ void stairCase(int n, int width,char block){
 
 
 
+/**
+ *https://www.hackerrank.com/challenges/time-conversion
+ * Convert regular time to military time
+ *eg. 12:00:00AM to 00:00:00
+ */
+
+//Ensures that NSLog doesn't have errors/timestamp and program name
+#define NSLog(FORMAT, ...) printf("%s\n", [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+
+void convertToArmyTime(){
+    char cLocalTime[11];
+    scanf("%s", cLocalTime);
+    NSString* localTime = [NSString stringWithUTF8String:cLocalTime];
+    
+    NSString* hours = [localTime substringWithRange:NSMakeRange(0, 2)];
+    NSString* minutes = [localTime substringWithRange:NSMakeRange(3, 2)];
+    NSString* seconds = [localTime substringWithRange:NSMakeRange(6, 2)];
+    NSString* meridian = [localTime substringWithRange:NSMakeRange(8, 2)];
+    
+    NSInteger militaryHour = [hours integerValue];
+    
+    if([meridian isEqualToString:@"PM"]){
+        militaryHour = militaryHour % 12 == 0? 0 : militaryHour % 12 + 12;
+    }
+    
+    NSLog(@"%@%li:%@:%@",(militaryHour < 10)?@"0":@"", (long)militaryHour , minutes, seconds );
+
+}
+
 #endif /* Warmup_h */

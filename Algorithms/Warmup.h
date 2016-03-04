@@ -70,10 +70,10 @@ void sumofNxNMatrix(){
 void fractionOfPrecision(){
     int n,
     total[3] = {0};
-    
+    //Store number
     scanf("%d", &n);
     float array[n];
-    
+
     for(int index = 0; index < n ; index++){
         scanf("%f", &array[index]);
 
@@ -142,28 +142,27 @@ void stairCase(int n, int width,char block){
  * Convert regular time to military time
  *eg. 12:00:00AM to 00:00:00
  */
-
-//Ensures that NSLog doesn't have errors/timestamp and program name
-#define NSLog(FORMAT, ...) printf("%s\n", [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
-
 void convertToArmyTime(){
-    char cLocalTime[11];
-    scanf("%s", cLocalTime);
-    NSString* localTime = [NSString stringWithUTF8String:cLocalTime];
     
-    NSString* hours = [localTime substringWithRange:NSMakeRange(0, 2)];
-    NSString* minutes = [localTime substringWithRange:NSMakeRange(3, 2)];
-    NSString* seconds = [localTime substringWithRange:NSMakeRange(6, 2)];
-    NSString* meridian = [localTime substringWithRange:NSMakeRange(8, 2)];
+    int min;
+    int hr;
+    float sec;
+    char merd[2];
     
-    NSInteger militaryHour = [hours integerValue];
+    //Take in a formatted input. NB: C has problem with scanning interger with leading 0 (user float instead)
+    scanf("%d:%d:%f%s", &hr, &min, &sec, merd);
+    bool exist = strcmp(merd, "PM") >= 0;
     
-    if([meridian isEqualToString:@"PM"]){
-        militaryHour = militaryHour % 12 == 0? 0 : militaryHour % 12 + 12;
+    //If PM and not midnight update army time value
+    if( exist && hr != 12){
+        hr += 12;
+    }
+    //If morning just began start hour @ 0
+    else if(!exist && hr == 12){
+        hr = 0;
     }
     
-    NSLog(@"%@%li:%@:%@",(militaryHour < 10)?@"0":@"", (long)militaryHour , minutes, seconds );
-
+    printf("%02d:%02d:%02d", hr, min, (int)sec);
 }
 
 #endif /* Warmup_h */

@@ -10,6 +10,7 @@
 #import "BigO-Basic.h"
 #import "Recursion-Basic.h"
 #import "Warmup.h"
+#import "Implementation.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -21,11 +22,17 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Recursive total: %d", sumNumbers(array, count -1));
        // NSLog(@"Recurvice reverse string: %@", [NSString stringWithFormat:@"%c",reverseString(@"Welcome", 6)]);
         
+        /**** WARM UP ********/
 //        sumLargNumbers();
 //        sumofNxNMatrix();
 //        fractionOfPrecision();
 //        stairCase(50, 0, '#');
-        convertToArmyTime();
+//        convertToArmyTime();
+        
+        
+        /***** IMPLEMENTATION *********/
+//        angryProfessor();
+        sherlockAndTheBeast();
     }
     return 0;
 }

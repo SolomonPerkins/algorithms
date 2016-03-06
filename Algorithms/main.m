@@ -32,7 +32,8 @@ int main(int argc, const char * argv[]) {
         
         /***** IMPLEMENTATION *********/
 //        angryProfessor();
-        sherlockAndTheBeast();
+//        sherlockAndTheBeast();
+        utopianTree();
     }
     return 0;
 }

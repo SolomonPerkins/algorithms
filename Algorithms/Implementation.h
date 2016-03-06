@@ -12,6 +12,7 @@
 /**
  https://www.hackerrank.com/challenges/angry-professor
  Angry Professor: Dismissing class if the number of students coming to class late is below a threshold
+ O(n)
  */
 
 //Determine if a student is late
@@ -47,6 +48,7 @@ void angryProfessor(){
  Trying to find the largest number, where the number of 5s or 3s is divisible by their opposite
  eg. 3 = 555 (three 5's and 3 is divisible by 3)
  eg. 11 = 555 555 33333 ( six 5's ( 6 is divisible by 3) and five 3's (and 5 is divisible by 5): 6 + 5 = 11 digits)
+ O(n)
  */
 
 //Print the number of required digits
@@ -64,7 +66,7 @@ void print5s3sCombination(int amount, int setsofThree){
 };
 
 //Find the largest of each digit to be used
-void findLargestDigit(int digitCount){
+void printDigits(int digitCount){
     int count = digitCount;
     //validation
     if(digitCount < 3){
@@ -111,9 +113,50 @@ void sherlockAndTheBeast(){
     }
     //print out results
     for(int currentCase = 0; currentCase < testCases; currentCase++) {
-        findLargestDigit(results[currentCase]);
+        printDigits(results[currentCase]);
     }
     
+};
+
+/**
+ https://www.hackerrank.com/challenges/utopian-tree
+ Utopian tree: finding the height of a tree after X growth cycles.
+            - Defualt height: 1m
+            - Spring height doubles
+            - Summer height increase by 1
+ 
+ O(n)
+ */
+int calculate(int height, int cycle,int count){
+    if(count > cycle){
+        return height;
+    }
+    //For summer height +1
+    if(count % 2 == 0){
+        height +=1;
+    }
+    //For spring height X2
+    else {
+        height *= 2;
+    }
+    return calculate(height, cycle, count+1);
+};
+
+void utopianTree(){
+    int initialHeight = 1;
+    int cycles;
+    int testCases;
+    scanf("%d", &testCases);
+    int heights[testCases];
+    
+    for(int currentCase = 0; currentCase < testCases; currentCase++){
+        scanf("%d", &cycles);
+        heights[currentCase] = calculate(initialHeight, cycles, 1);
+    }
+    
+    for(int currentCase = 0; currentCase < testCases; currentCase++){
+        printf("%d\n", heights[currentCase]);
+    }
 };
 
 #endif /* Implementation_h */

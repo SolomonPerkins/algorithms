@@ -33,7 +33,8 @@ int main(int argc, const char * argv[]) {
         /***** IMPLEMENTATION *********/
 //        angryProfessor();
 //        sherlockAndTheBeast();
-        utopianTree();
+//        utopianTree();
+        findDigit();
     }
     return 0;
 }

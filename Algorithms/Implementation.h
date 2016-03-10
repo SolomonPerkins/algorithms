@@ -159,4 +159,34 @@ void utopianTree(){
     }
 };
 
+/***
+ https://www.hackerrank.com/challenges/find-digits
+ Find Digits: Count the number of digits N can be divided by without leaving a remainder
+ 
+ */
+//Recursive call, count divisible digits per test case
+int digitCount(long long int number, long long int holdNum, int count){
+    int lastDigit;
+    if(number == 0){
+        return count;
+    }
+    lastDigit = number%10;
+    if(lastDigit != 0)
+        count += holdNum % lastDigit == 0 ? 1 : 0;
+    //printf("<<<<< count:%d last:%d divi:%lld num:%lld\n", count, lastDigit, holdNum % lastDigit, number);
+   return digitCount((long long int)number/10, holdNum, count);
+};
+
+void findDigit(){
+    int testCases;
+    scanf("%d", &testCases);
+    long long int number[testCases];
+    for(int currentCase = 0; currentCase < testCases; currentCase++){
+        scanf("%lld", &number[currentCase]);
+    }
+    for(int currentCase = 0; currentCase < testCases; currentCase++){
+        printf("%d\n", digitCount(number[currentCase],number[currentCase], 0));
+    }
+}
+
 #endif /* Implementation_h */

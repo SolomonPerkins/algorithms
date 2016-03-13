@@ -189,4 +189,89 @@ void findDigit(){
     }
 }
 
+
+/***
+ https://www.hackerrank.com/challenges/sherlock-and-squares
+ Sherlock Square: Finding the total squared integers between a range A and B
+ using the formula: (n+1)^2 - n^2 = 2n+1
+ 
+ O(n)
+ 
+ *||*||*||* THIS CODE RUNS OVER 2seconds. NEED TO LET IT RUN LOWER THAN THAT *||*||*||*
+*/
+int countSquares(long long int currentNumber, long long int endNumber, int count ){
+    
+    if(currentNumber > endNumber)
+        return count;
+    //Determine if the number has a square root.
+    long double sqareRoot = sqrtl(currentNumber);
+    //count if number is a perfect square
+    if(sqareRoot != 0){
+        //remove decimals(Case to int then cast back to double)
+        count += (long double)(sqareRoot / ((long long int) sqareRoot)) > 1 ? 0 : 1;
+    }
+    return countSquares(currentNumber+1, endNumber, count);
+}
+
+void sherlockSquare(){
+    int testCases;
+    scanf("%d", &testCases);
+    long long int A[testCases];
+    long long int B[testCases];
+    for(int currentCase = 0; currentCase < testCases; currentCase++){
+        scanf("%lld %lld", &A[currentCase], &B[currentCase]);
+    }
+    
+    for(int currentCase = 0; currentCase < testCases; currentCase++){
+        printf("%d\n", countSquares(A[currentCase], B[currentCase], 0));
+    }
+}
+
+/***
+  Improved version of sherlockSquare
+ * Calculate the square of upper and lower bound, and find the difference between the two.
+ * Ensure to handle the case where: 1) both are equal or 2) lower bound is perfect square
+**/
+
+bool isPerfectSquare(long a){
+
+    long sqareA = (long)sqrt(a * 1.0);
+    if(sqareA * sqareA  == a){
+        return true;
+    }
+    return false;
+}
+
+int squareCount(long A, long B){
+    long rootA, rootB;
+    
+    rootA = (long)sqrt(A * 1.0);
+    rootB = (long)sqrt(B * 1.0);
+    
+    if(A == B && isPerfectSquare(A)){
+        return 1;
+    }
+    else if(isPerfectSquare(A)){
+        return (int)(rootB - rootA + 1);
+    }
+    else {
+        return (int)(rootB - rootA);
+    }
+};
+
+void sherlockSquare_IMPROVED(){
+    int testCases;
+    scanf("%d", &testCases);
+    long A[testCases];
+    long B[testCases];
+    for(int currentCase = 0; currentCase < testCases; currentCase++){
+        scanf("%ld %ld", &A[currentCase], &B[currentCase]);
+    }
+    for(int currentCase = 0; currentCase < testCases; currentCase++){
+        printf("%d\n", squareCount(A[currentCase], B[currentCase]));
+    }
+}
+
+
+
 #endif /* Implementation_h */

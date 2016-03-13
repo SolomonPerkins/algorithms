@@ -34,7 +34,8 @@ int main(int argc, const char * argv[]) {
 //        angryProfessor();
 //        sherlockAndTheBeast();
 //        utopianTree();
-        findDigit();
+//        findDigit();
+        sherlockSquare_IMPROVED(); //        sherlockSquare();
     }
     return 0;
 }

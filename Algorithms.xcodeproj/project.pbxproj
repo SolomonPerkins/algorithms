@@ -28,6 +28,7 @@
 		D598A6B71C7B3D0B006FFBD8 /* Algorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		D598A6BA1C7B3D0B006FFBD8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D598A6C11C7B3D2F006FFBD8 /* BigO-Basic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BigO-Basic.h"; sourceTree = "<group>"; };
+		D5E26F6F1C89BF8F00C8AC92 /* Implementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Implementation.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +65,7 @@
 				D598A6C11C7B3D2F006FFBD8 /* BigO-Basic.h */,
 				D51B4D1A1C7DD2DA00D66A6E /* Recursion-Basic.h */,
 				D51B4D1B1C83ACEA00D66A6E /* Warmup.h */,
+				D5E26F6F1C89BF8F00C8AC92 /* Implementation.h */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";

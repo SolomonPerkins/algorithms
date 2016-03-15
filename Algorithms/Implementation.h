@@ -231,6 +231,8 @@ void sherlockSquare(){
   Improved version of sherlockSquare
  * Calculate the square of upper and lower bound, and find the difference between the two.
  * Ensure to handle the case where: 1) both are equal or 2) lower bound is perfect square
+ 
+ O(n)
 **/
 
 bool isPerfectSquare(long a){
@@ -242,6 +244,9 @@ bool isPerfectSquare(long a){
     return false;
 }
 
+/*
+ Count square between a range by taking the root of each number and subtract it.
+ */
 int squareCount(long A, long B){
     long rootA, rootB;
     
@@ -270,7 +275,57 @@ void sherlockSquare_IMPROVED(){
     for(int currentCase = 0; currentCase < testCases; currentCase++){
         printf("%d\n", squareCount(A[currentCase], B[currentCase]));
     }
-}
+};
+
+
+/****
+ *  https://www.hackerrank.com/challenges/service-lane
+ *  Service lane
+    Find the min. vehicle which can passthrough different segmented service lanes: 1= bike, 2=car 3=truck
+ */
+
+int passThrough(int current, int exit, int vehicleType, int *segment, int segmentLength){
+    if(current == exit + 1){
+        return vehicleType;
+    }
+    //Exit if found a bike exit as this is the smalles vehicle
+    if(vehicleType == 1){
+        return vehicleType;
+    }
+    //Search through and find the element with the smalles unit
+    if(segment[current] < vehicleType){
+        vehicleType = segment[current];
+    }
+    return passThrough(current+1, exit, vehicleType, segment, segmentLength);
+};
+
+void serviceLane(){
+    int testCases, freewayLength;
+    
+    scanf("%d %d",&freewayLength, &testCases);
+    int segments[freewayLength]; //the witdh for each segment of the freeway
+    int vehicleSegment[testCases];  //Array holding the min. vechile per segment.
+    int start, exit;
+    
+    //Run the length of the freeway
+    for(int freewayIndex = 0; freewayIndex < freewayLength; freewayIndex++){
+        scanf("%d", &segments[freewayIndex]);
+    }
+    
+    //Run for each test case
+    for( int currentCase = 0; currentCase < testCases; currentCase++){
+        scanf("%d %d", &start, &exit);
+        vehicleSegment[currentCase] = passThrough(start, exit, segments[start-1], segments, freewayLength);
+    }
+    
+    for( int currentCase = 0; currentCase < testCases; currentCase++){
+        printf("%d\n", vehicleSegment[currentCase]);
+    }
+};
+
+
+
+
 
 
 

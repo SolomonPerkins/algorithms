@@ -323,6 +323,81 @@ void serviceLane(){
     }
 };
 
+/**
+ *https://www.hackerrank.com/challenges/cut-the-sticks
+ * Cut sticks.
+ * Reduce each length of all the sticks by the smallest one until zero, and display the #of remaining sticks on each cut.
+ */
+void cut(int * sticks, int length, int count) {
+    
+}
+void cutSticks(){
+    int length;
+    scanf("%d", &length);
+    int sticks[length];
+    int smallestStick; //index of smallest stick
+    int cutCount = length;
+    for(int index =0; index < length; index++){
+        scanf("%d", &sticks[index]);
+        if(index == 0 || sticks[index] < smallestStick){
+            smallestStick = sticks[index];
+        }
+    }
+    
+    //how many time is each stick can be cut
+    for(int index =0; index < length; index++){
+        sticks[index] /= smallestStick;
+        printf("%d %d\n", sticks[index], smallestStick);
+    }
+    
+    
+    for(int count = length, index =0 ; count > 0; index++ ){
+//        if(index == length){
+//            index = 0;
+//        }
+//        if(sticks[index] < 1){
+//            count--;
+//        }
+//        sticks[index] -= 1;
+        printf("%d\n", count);
+        
+        if(count == 0 ){
+            count = length;
+        }
+    }
+};
+
+
+/**
+ *https://www.hackerrank.com/challenges/chocolate-feast
+ *Chocolate feast: Have $N dollars, and price of chocolate is $C each. For every M you get one free.
+ *How much chocolate recieved
+ **/
+long int calculateChocolate(long double totalCash, long double pricePerUnit, long double freeWrapper){
+    long int total = 0;
+    long int freeChocolates = 0;
+    total = (long int)(totalCash / pricePerUnit);
+    if(total >= (long int)freeWrapper){
+        freeChocolates = (long int)(total / freeWrapper) + (total % (long int)freeWrapper);
+    }
+    return (long int)(total + freeChocolates);
+}
+
+void chocolateFeast(){
+    int testCases = 0;
+    long double N, //Money available
+        C, //price per chocolate
+        M; //A free chocolate threshold
+    scanf("%d", &testCases);
+    long int chocolates[testCases];
+    for(int current = 0; current < testCases; current++){
+        scanf("%Lf %Lf %Lf", &N, &C, &M);
+        chocolates[current] = calculateChocolate(N, C, M);
+    }
+    for(int current = 0; current < testCases; current++){
+        printf("%.0ld\n", chocolates[current]);
+    }
+}
 
 
 

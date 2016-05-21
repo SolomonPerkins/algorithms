@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D5197BE51CF0978600060AB4 /* Test-Cases.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Test-Cases.h"; path = "../Test-Cases.h"; sourceTree = "<group>"; };
 		D51B4D1A1C7DD2DA00D66A6E /* Recursion-Basic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Recursion-Basic.h"; sourceTree = "<group>"; };
 		D51B4D1B1C83ACEA00D66A6E /* Warmup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Warmup.h; sourceTree = "<group>"; };
 		D598A6B71C7B3D0B006FFBD8 /* Algorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithms; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +62,7 @@
 		D598A6B91C7B3D0B006FFBD8 /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				D5197BE51CF0978600060AB4 /* Test-Cases.h */,
 				D598A6BA1C7B3D0B006FFBD8 /* main.m */,
 				D598A6C11C7B3D2F006FFBD8 /* BigO-Basic.h */,
 				D51B4D1A1C7DD2DA00D66A6E /* Recursion-Basic.h */,

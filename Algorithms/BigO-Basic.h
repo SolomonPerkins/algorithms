@@ -79,4 +79,34 @@ void findSmallesNumberPart2 (int * array, int count){
     NSLog(@"findSmallestNumberPart2: Smallest number is: %i", smallestNumber);
 }
 
+/**
+ * Check
+ * https://www.hackerrank.com/challenges/30-running-time-and-complexity
+ */
+
+char * isPrime(long num) {
+    char *notPrime = "Not prime";
+    char *prime = "Prime";
+    
+    if(num <= 1 ){
+        return notPrime;
+    }
+    else if(num <= 3) {
+        return prime;
+    }
+    else if(num % 2 == 0 || num % 3 == 0){
+        return notPrime;
+    }
+    int count = 5;
+    while ((count*count) < num) {
+        
+        if( num % count == 0 || num % (count + 2) == 0){
+            return notPrime;
+        }
+        count+= 6;
+    }
+    
+    return prime;
+}
+
 #endif /* BigO_Basic_h */

@@ -40,7 +40,10 @@ int main(int argc, const char * argv[]) {
         
         //TODO: NOT YET COMPLETED
         //        cutSticks();
-        chocolateFeast();
+        //chocolateFeast();
+        long num = 123;
+        printf("%s\n", isPrime(num));
+
     }
     return 0;
 }

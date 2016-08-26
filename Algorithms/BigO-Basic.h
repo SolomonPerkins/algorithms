@@ -80,7 +80,8 @@ void findSmallesNumberPart2 (int * array, int count){
 }
 
 /**
- * Check
+ * Check if a number is prime
+ * Using the primality test method: If it is a prime from: m to √n (where n is value & m is range between 2<-> √n)
  * https://www.hackerrank.com/challenges/30-running-time-and-complexity
  */
 
@@ -108,5 +109,49 @@ char * isPrime(long num) {
     
     return prime;
 }
+
+
+/**
+ * Calculate the cost for a book returned to the library late.
+ * https://www.hackerrank.com/challenges/30-nested-logic
+ */
+
+
+NSInteger calculateFine(NSInteger *returnTime) {
+    int dailyRate = 15;
+    int monthlyRate = 500;
+    int yearlyRate = 10000;
+    NSInteger rates[3] = {dailyRate, monthlyRate, yearlyRate};
+
+
+    for (int i = 2; (i >= 0 && returnTime[2] > -1); i--) {
+        if( returnTime[i] > 0 ) {
+            if(i == 2) {
+                return rates[i];
+            } else {
+                return rates[i] * returnTime[i];
+            }
+        }
+    }
+    //No charge if return before due date
+    return 0;
+}
+
+void returnBook() {
+    NSInteger actual[3] = {};
+    NSInteger expected[3] = {};
+    
+    //Handle input for expected and actual return date
+    scanf("%ld %ld %ld", &actual[0], &actual[1], &actual[2]);
+    scanf("%ld %ld %ld", &expected[0], &expected[1], &expected[2]);
+    NSInteger timeDiff[3] = {
+        actual[0] - expected[0],
+        actual[1] - expected[1],
+        actual[2] - expected[2]
+    };
+    
+    printf("%d", (int)calculateFine(timeDiff));
+};
+
 
 #endif /* BigO_Basic_h */

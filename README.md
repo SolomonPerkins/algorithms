@@ -68,7 +68,7 @@ end
 
 **Recursion can provide you with the fastest (logarithm) solution or some of the slowest (exponential). Therefore the use case for this is impmortant.**
 <details>
-<summary>Exponential Time: Θ (2<sup>n</sup>) </summary>
+<summary>Exponential Time: Θ(n<sup>2</sup>) OR Θ(log(n))</summary>
 
 ```java
 //Not good as you're calling the recusive function twice.

@@ -47,7 +47,7 @@ end
 
 ---
 <details>
-<summary>Polynomial Time (Nested loops): O(1)=Ω(1)=Θ(n<sup>2</sup>) </summary>
+<summary>Polynomial Time (Nested loops): Θ(n<sup>2</sup>) </summary>
 
 ```java
 //Example to access 2D, 3D, 4D objects.

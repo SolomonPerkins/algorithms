@@ -55,7 +55,7 @@ end
 function access(a[][], size) 
     for i = 1:size
         for l = i:size
-            println(a[i][i])
+            println(a[i][l])
         end
     end 
 end

@@ -28,17 +28,19 @@
 
 # Code Snippet
 
+# Code Snippets
+
 <details>
 <summary>Code Snippet</summary>
+
 <p>
 
-```
-    
+```go
 
+func fn() {
+  //Code here
+}
 
 ```
 </p>
-
 </details>
-
-

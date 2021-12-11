@@ -47,7 +47,7 @@ end
 
 ---
 <details>
-<summary>Polynomial Time (Nested loops): Θ(n<sup>2</sup>) </summary>
+<summary>Polynomial Time (Nested loops): Θ(n<sup>2</sup>) OR Θ(log(n))</summary>
 
 ```java
 //Example to access 2D, 3D, 4D objects.
@@ -68,7 +68,7 @@ end
 
 **Recursion can provide you with the fastest (logarithm) solution or some of the slowest (exponential). Therefore the use case for this is impmortant.**
 <details>
-<summary>Exponential Time: Θ(n<sup>2</sup>) OR Θ(log(n))</summary>
+<summary>Exponential Time: Θ(n<sup>2</sup>)</summary>
 
 ```java
 //Not good as you're calling the recusive function twice.

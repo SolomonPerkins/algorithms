@@ -102,3 +102,16 @@ end
 
 ```
 </details>
+
+
+
+---
+</br>
+</br>
+# References
+
+No I won't take all the credit for coming up with this list. As a result I will be posting all the references I've used.
+
++ [Algorithm Archive][algorithm-archive]
+
+[algorithm-archive]: https://github.com/SolomonPerkins/algorithms/blob/master/README.md

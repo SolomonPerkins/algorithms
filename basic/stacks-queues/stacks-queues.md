@@ -1,10 +1,10 @@
 
 
-![alt text](https://media.geeksforgeeks.org/wp-content/uploads/geek-queue-1.png "queue")
+| Queue | Stack |
+|-------|-------|
+| ![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Data_Queue.svg/300px-Data_Queue.svg.png "queue") |  ![Stac](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Lifo_stack.png/350px-Lifo_stack.png "") |
 
-![alt text](https://media.geeksforgeeks.org/wp-content/uploads/geek-stack-1.png "Stack")
-
-
+<small>Source: Wikipedia</small>
 
 # Description
 Stacks and queue are simple data structures that holds multiple elements, but allow you to only use one element at any given time.

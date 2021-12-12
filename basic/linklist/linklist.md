@@ -24,12 +24,29 @@ This is a sequence of elements connected together in a list, with each link havi
 
 ## Scenarios:
 
-+ `Scenario 1`:
-  + > Example details
++ `Image Slider, Music Playlist`:
+  > User selecting the previous and next buttons to navigate through various images
+
++ `Determining The Max, Min of large numbers`:
+  > Using a double linked list can help you keep track of minimum (head) and also the maximum (tail). This would allow the algorithm to run in order of O(1).
+
++ `Bitcoin`:
+  > The fundamental concept used in Bitcoin ledger is an immutable linked-list. You are able to add transactions to the list but not pull from it.
+
++ `Circular Linked List: Good for repeatable tasks`:
+  > For items where you're constantly going around a particular order, this tasks can help to be similar to a queue.\
+  **Fibonacci Heap** is one of the implementation of a Double Circular LinkedList. 
+
++ `Train mapping stations and other step navigations`: 
+  > Each stations having the information needed and also a link to the next station.
 
 
 # Disadvantages
 
++ `Memory usage`
++ `List Traversal` : This is more time consuming than an array
++ `Random no access`: You're not able to access elements randomly
++ `Reverse Traversal`: You can't traverse in the opposite direction of a Single LinkedList.
 
 
 

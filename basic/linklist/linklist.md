@@ -38,14 +38,16 @@ This is a sequence of elements connected together in a list, with each link havi
 ## Adding A Node
 
 - Step 1: Create the note
-  
-  ![create link](https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list_insertion_0.jpg)
+
+![create link](https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list_insertion_0.jpg)
 
 - Step 2: Connect new node to the next element
-  ![Add to next](https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list_insertion_1.jpg)
+
+![Add to next](https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list_insertion_1.jpg)
 
 
 - Step 3: Update preceeding node reference and set it to the new node
+
 ![update previous reference](https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list_insertion_2.jpg)
 
 

@@ -101,3 +101,56 @@ func (l LinkedList) search(value string) *Node {}
 ```
 </p>
 </details>
+
+
+----
+
+## Linked List Algorithms
+
+### `Floyd's Tortoise and hare` Algorithm
+
+[Medium.com](https://medium.com/@edgar-loves-python/the-tortoise-the-hare-and-the-cyclical-linked-list-1b51acab5b "Medium.com")
+
+This algorithm is used to determine if a linked list is cyclical. There are instances when a linked list can be cyclical and as a result impact system performance. The solution is to use an hare and a tortise. An hare being a fast runner, while a tortoise being a slow running can help to determine if a linked list is cyclical. If the hare catches up to the tortise, that means the list is cyclic. **The Floyd's algorithm is space efficient when compared to other options**
+
+![cyclical example](https://miro.medium.com/max/700/1*q4kOhLvTsrhlrbpbgILMnw.png "Cyclical")
+<small>An example of medium.com</small>
+
+
+While there are alternative options such as:
+
++ Using a `set` to keep track of previously traversed locations. Once an existing node was found, then it is safe to assume that the linked list is cyclical. **This can be memory intensive and not good as it is `space inefficient` challenge.**
+
+
+<details>
+<summary>LinkedList</summary>
+
+<p>
+
+```go
+
+func tortoiseAndHare(head *node) bool {
+
+  fast := head
+  slow := head
+
+  while fast in fast.next_node {
+    slow = fast.next_node
+    fast = fast.next_node.next_node //Notice the hare is travelling faster than the tortoise
+    
+    if fast == slow {
+      return true
+    }
+  }
+
+  return false
+
+}
+
+
+
+```
+</p>
+</details>
+
+

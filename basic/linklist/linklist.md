@@ -123,7 +123,7 @@ While there are alternative options such as:
 
 
 <details>
-<summary>LinkedList</summary>
+<summary>Floyd's Tortoise and Hare</summary>
 
 <p>
 

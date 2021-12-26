@@ -28,7 +28,6 @@
 
 # Code Snippet
 
-# Code Snippets
 
 <details>
 <summary>Code Snippet</summary>

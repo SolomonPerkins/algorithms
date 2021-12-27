@@ -15,17 +15,14 @@ There are other algoritms which uses this strategy including: Binary Search, Mer
 
 # Use Cases
 1. Use to sort large datasets.
-2. 
 
-## Scenarios:
-
-+ `Scenario 1`:
-  + > Example details
 
 
 # Disadvantages
 1. Requires extra **memory** to perform operation. Not ideal if you're scarce on memory.
-2. Recursion have significan resource overhead. 
+2. Recursion have significant resource overhead.
+3. Slow on small dataset.
+4. Even if the list is sorted it will go through the list.
 
 
 
@@ -34,8 +31,6 @@ There are other algoritms which uses this strategy including: Binary Search, Mer
 1. Divide the list recursively into two or more sub-problems, until it cannot be done
 2. Solve the sub problems until is is reached to the base case
 3. Merge the smaller list into the new list
-
-
 
 
 
@@ -74,7 +69,7 @@ func merge(first []int, second []int) []int {
     i := 0 
     j := 0
 
-    //
+    //For both arrs compare and swap each based on value
     for i < len(first) && j < len(second) {
 
         if first[i] < second[i] {

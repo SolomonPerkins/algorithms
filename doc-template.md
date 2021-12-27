@@ -6,6 +6,10 @@
 
 
 
+
+# Pseudocode
+
+
 # Use Cases
 
 ## Scenarios:
@@ -16,10 +20,6 @@
 
 # Disadvantages
 
-
-
-
-# Pseudocode
 
 
 

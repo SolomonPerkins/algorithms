@@ -6,9 +6,9 @@ There are three main classification of design patterns:
     > These patterns are designed for class instantiation. They can be either class-creation patterns or object-creational patterns.
     
     + [Singleton](./creational/singleton.md)
-    + [Builder]()
-    + [Prototype]()
-    + [Factory Method]()
+    + [Builder](./creational/builder.md)
+    + [Prototype](./creational/prototype.md)
+    + [Factory Method](./creational/factory-method.md)
     + [Abstract Factory]()
 
 2. ## Structural Patterns

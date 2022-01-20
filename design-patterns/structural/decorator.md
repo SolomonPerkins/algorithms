@@ -6,7 +6,7 @@
 
 ![Shapes](https://www.tutorialspoint.com/design_pattern/images/decorator_pattern_uml_diagram.jpg)
 
-!["Coffee Shop Selling Coffee"](https://www.freecodecamp.org/news/content/images/2019/07/decorator-class-diagram.png)
+!["Coffee Shop Selling Coffee"](https://www.freecodecamp.org/news/content/images/2019/07/command-class-diagram.PNG)
 
 <hr />
 

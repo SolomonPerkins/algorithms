@@ -15,7 +15,7 @@ There are three main classification of design patterns:
     > These patters are design with regard to class structure and composition. The main gola of these patterns is to increate functionality of the class(es) invovled without changing most of its composition.
 
     + [Decorator](./structural/decorator.md)
-    + [Adapter]()
+    + [Adapter](./structural/adapter.md)
     + [Bridge]()
     + [Composite]()
     + [Facade]()

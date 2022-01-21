@@ -19,7 +19,7 @@ This pattern creates a decorator pattern which wraps the original class and prov
 
 
 <br/>
-<details>
+<details open>
     <summary>Coffee Shop | Multiple Additives</summary>
 
 ```java
@@ -151,7 +151,7 @@ public class CoffeeShop {
 
 
 <br/>
-<details>
+<details open>
     <summary>Shapes | Multiple Additivess</summary>
 
 ```java

@@ -16,7 +16,7 @@ The builder pattern encapsulates or hides the process of building complex object
 `This is different from abstract pattern as it creates the object in segments, while the abstract factory pattern return the object in one go.`
 
 
-<details>
+<details open>
 <summary>Builder Pattern</summary>
 
 ```java

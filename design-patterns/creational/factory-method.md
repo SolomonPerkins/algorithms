@@ -1,5 +1,7 @@
 # Factory Method
 
+![Factory Method](https://blog.miyozinc.com/wp-content/uploads/2016/06/factory-method-pattern-example.png)
+
 A creational pattern use to create objects without the need to specify the exact class of the object you will be creating. `Delegating the instantiation logic of the child class.`.
 
 
@@ -11,7 +13,7 @@ A creational pattern use to create objects without the need to specify the exact
 
 
 
-<details>
+<details open>
 <summary>Factory Method Pattern</summary>
 
 ```java

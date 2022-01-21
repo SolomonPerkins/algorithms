@@ -10,7 +10,7 @@ There are three different implementations of singleton:
 1. Eager Instantiation
     > This form creates a new instance of the class once the program starts. This can be very expensive and intensive
 
-    <details>
+    <details open>
     <summary>Example</summary>
 
     ```java
@@ -35,7 +35,7 @@ There are three different implementations of singleton:
 2. Lazy Instantiation
     > Initialize only when needed. Useful to help maintain resource usage. There is a problem as with multi-thread machines two threads can call the methods exactly the same time and create multiple instances of the singleton.
     
-    <details>
+    <details open>
     <summary>Lazy Init</summary>
 
     ```java
@@ -65,7 +65,7 @@ There are three different implementations of singleton:
 3. Thread-safe Instantiation
    > This will ensure only one thread is able to accessed at any given time. Therefore protecting it from having multiple instances
     
-    <details>
+    <details open>
     <summary>Thread Safe Example</summary>
 
     ```java

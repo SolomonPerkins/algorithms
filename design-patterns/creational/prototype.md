@@ -8,7 +8,7 @@ This refers to creating duplicate object while keeping performance in mind. `Thi
 - Implement a prototype interface which tells to create a clone of the current object.
 - Create a cache repository which is used to generate the classes as needed
 
-<details>
+<details open> 
 <summary>Prototype Pattern</summary>
 
 ```java

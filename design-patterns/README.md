@@ -5,11 +5,11 @@ There are three main classification of design patterns:
 1. ## Creational Patterns
     > These patterns are designed for class instantiation. They can be either class-creation patterns or object-creational patterns.
     
-    + [Singleton](./creational/singleton.md)
-    + [Builder](./creational/builder.md)
-    + [Prototype](./creational/prototype.md)
-    + [Factory Method](./creational/factory-method.md)
-    + [Abstract Factory]()
+    + [Singleton](./creational/singleton.md) : `Only one instance of an object.`
+    + [Builder](./creational/builder.md) : `To build complex objects.`
+    + [Prototype](./creational/prototype.md): `Effeciently clone objects (useful db intensive type apps).`
+    + [Factory Method](./creational/factory-method.md) : `Encapsulate the creation process`
+    + [Abstract Factory](./creational/abstract-factory.md): `Best way to do factory method. Creates a factory (producer) for the factory`
 
 2. ## Structural Patterns
     > These patters are design with regard to class structure and composition. The main gola of these patterns is to increate functionality of the class(es) invovled without changing most of its composition.

@@ -14,13 +14,13 @@ There are three main classification of design patterns:
 2. ## Structural Patterns
     > These patters are design with regard to class structure and composition. The main gola of these patterns is to increate functionality of the class(es) invovled without changing most of its composition.
 
-    + [Decorator](./structural/decorator.md)
-    + [Adapter](./structural/adapter.md)
-    + [Bridge]()
-    + [Composite]()
-    + [Facade]()
-    + [Flyweight]()
-    + [Proxy]()
+    + [Decorator](./structural/decorator.md): `Handle ever changing objects buy adding different flavors/decorators.`
+    + [Adapter](./structural/adapter.md): `Integrate incompatible interfaces to communicate`
+    + [Bridge](./structural/bridge.md): `For platform independent features. Useful for run-time binding implementations.`
+    + [Composite](./structural/composite.md): `An class/interface with a nested version of itself and they are treated as one object.`
+    + [Facade](./structural/facade.md): ` Hide the complexities of class behind an interface. Thus providing one simple class for services/client to use.`
+    + [Flyweight](./structural/flyweight.md): `Help save memory or performance by storing objects in hashmaps`
+    + [Proxy](./structural/proxy.md): `Create an intermdiate object to interface and do action as a proxy.`
 
 3. ## Behavioural Patterns
    > These patters are designed depending on how classes communicate with each other.

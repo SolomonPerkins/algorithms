@@ -25,11 +25,11 @@ There are three main classification of design patterns:
 3. ## Behavioural Patterns
    > These patters are designed depending on how classes communicate with each other.
 
-   + [Command](./behavioural/command.md)
-   + [Chain of Responsibility]()
-   + [Observer]()
-   + [Interpreter]()
-   + [Interator]()
+   + [Command](./behavioural/command.md): `A request as a command without knowing anything about the operation being requested.`
+   + [Chain of Responsibility](./behavioural/chain-of-responsibility.md): `A linked list type of handles which pass on the operation until it is complete. The requester don't know which implementation will handle the request.`
+   + [Observer](): `One-to-many relationship of multiple subscriber/observer on a subject.`
+   + [Interpreter](./behavioural/interpreter.md): `Resolving a problem "language" by using an expression within a well defined domain`
+   + [Interator](./behavioural/iterator.md)
    + [Mediator]()
    + [Memento]()
    + [State]()

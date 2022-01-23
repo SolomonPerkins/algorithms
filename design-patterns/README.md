@@ -29,13 +29,13 @@ There are three main classification of design patterns:
    + [Chain of Responsibility](./behavioural/chain-of-responsibility.md): `A linked list type of handles which pass on the operation until it is complete. The requester don't know which implementation will handle the request.`
    + [Observer](): `One-to-many relationship of multiple subscriber/observer on a subject.`
    + [Interpreter](./behavioural/interpreter.md): `Resolving a problem "language" by using an expression within a well defined domain`
-   + [Interator](./behavioural/iterator.md)
-   + [Mediator]()
-   + [Memento]()
-   + [State]()
-   + [Template]()
-   + [Strategy]()
-   + [Visitor]() 
+   + [Interator](./behavioural/iterator.md): `Used to iterator over a list of objects in a sequential manner.`
+   + [Mediator](./behavioural/mediator.md): `A middleman/mediator used in many-to-many relationships to decouple the classes during communication.`
+   + [Memento](./behavioural/memento.md): `Used to keep track of the various states of an object.`
+   + [State](./behavioural/state.md): `Similar to a state machine, this will keep track of various states.`
+   + [Template](./behavioural/template.md)
+   + [Strategy](./behavioural/strategy.md)
+   + [Visitor](./behavioural/visitor.md) 
 
 
 

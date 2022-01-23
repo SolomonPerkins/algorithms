@@ -33,7 +33,7 @@ There are three main classification of design patterns:
    + [Mediator](./behavioural/mediator.md): `A middleman/mediator used in many-to-many relationships to decouple the classes during communication.`
    + [Memento](./behavioural/memento.md): `Used to keep track of the various states of an object.`
    + [State](./behavioural/state.md): `Similar to a state machine, this will keep track of various states.`
-   + [Template](./behavioural/template.md): `This provides a skeleton as `
+   + [Template](./behavioural/template.md): `This provides a skeleton/abstract class which can provide multiple ways to execute an operation.`
    + [Strategy](./behavioural/strategy.md): `Used to encapsulate various algorithms and utilize them based on run-time.`
    + [Visitor](./behavioural/visitor.md): `This is used to perform many operations on an object by using visitors.`
 

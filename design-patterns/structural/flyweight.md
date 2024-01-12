@@ -19,30 +19,70 @@ It accomplish this by attempting to reuse existing similar objects by storing th
 
 
 <details open>
-<summary>Abstract Build Pattern</summary>
+<summary>Flyweight Pattern</summary>
 
 ```java
 //The interface
-public interface Shape{
+public class TreeType{
+    private String name;
+    private String olor;
+    private  String texture;
 
-    void draw();
+
+    public TreeType(name, color, texture) {
+        this.name = name;
+        this.color = color;
+        this.texture = texture;
+    }
+    
+    public draw(canvas, x, y) {
+
+    }
 }
 
-public class Circle implements Shape {
-    private String color;
+public class TreeFactory {
+    private TreeType type;
     private int x;
     private int y;
 
-    public Circle(String color) {
-        this.color = color;
+    public static getTreeType(String name, color, texture) {
+        type = treeTypes.find(name, color, texture);
+        if(type == null) {
+            type = new TreeType(name, color, texture);
+            treeTypes.add(type);
+        }
+        return type;
     }
 
-    @Override
-    public void draw() {
-        //Do some drawing
+}
+
+public class  Tree {
+    private int x,y;
+    private TreeType type;
+
+    Tree(x, y, type) {}
+
+    public draw(canvas) {
+        tree.draw(canvas, this.x, this.y)
     }
 }
 
+
+public class Forest {
+    private List<Tree> trees;
+
+    plantTree(x, y, name, color, texture) {
+        type = TreeFactory.getTreeType(name, color, texture);
+        tree = new Tree(x,y, type);
+        trees.add(tree);
+    }
+
+    draw(canvas) {
+        foreach(tree in trees) {
+            tree.draw(canvas);
+        }
+    }
+}
 ```
 
 

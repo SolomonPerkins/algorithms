@@ -5,6 +5,9 @@
 
 The purpose of this is to create only one instance of this object. With one global access point to that object.
 
+
+![Structure](./assets/singleton-structure.png)
+
 There are three different implementations of singleton:
 
 1. Eager Instantiation

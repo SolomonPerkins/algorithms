@@ -62,7 +62,7 @@ public class Rectangle extends Shape {
 
 ```java
 //How they're integrated
-public class ShapeCace {
+public class ShapeCache {
     private static Hashtable<String, Shape> shapeMap = new Hashtable<String, Shape>();
 
     public static Shape getShape(String shapeId) {

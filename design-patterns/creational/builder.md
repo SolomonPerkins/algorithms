@@ -1,6 +1,6 @@
 # Builder Design Pattern
 
-!["Builder Design Pattern"](./../../assets/builder-design-pattern.png)
+!["Builder Design Pattern"](./assets/builder-design-pattern.png)
 
 This pattern is used to build objects. For complex objects made up of several sub-objects this helps to simplify and delegate the steps needed.
 
@@ -15,6 +15,10 @@ The builder pattern encapsulates or hides the process of building complex object
 
 `This is different from abstract pattern as it creates the object in segments, while the abstract factory pattern return the object in one go.`
 
+![Builder Structure](./assets/builder-pattern.png)
+
+## Use When
+- When you want to avoid large complex objects
 
 <details open>
 <summary>Builder Pattern</summary>

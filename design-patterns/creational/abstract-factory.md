@@ -12,6 +12,8 @@ This pattern is similar to the [factory method pattern](./factory-method.md), bu
   - Create all the concrete class implementation of the shape class.
   - Create an abstract factory and extend that factory with other factory.
 
+## When To Use
+- When you want to make the code extensible but you don't know all the implementatio beforehand or you want it to be exensible.
 
 
 <details open>

@@ -43,7 +43,7 @@ __Big O of 0(n<sup>2</sup>) as in the worst case it will traverse the entire lis
 # Code Snippet
 
 <details>
-<summary>Insertion Sort</summary>
+<summary>Insertion Sort | GO</summary>
 
 <p>
 
@@ -65,4 +65,69 @@ func insertionSort(arr []int) []int {
 
 ```
 </p>
+</details>
+
+<details>
+  <summary>Insertion Sort | Java</summary>
+  <p>
+  
+  ```java
+  import java.util.*;
+
+public class insertionSort {
+
+    static int insertSorted(int arr[], int n, int key, int  capacity) {
+        if(n >= capacity) {
+            return n;
+        }
+
+        int i;
+        for(i = n -1  ;(i >= 0 && arr[i] > key); i--) {
+            arr[i + 1] = arr[i];
+        }
+        arr[i +  1] = key;
+
+        return (n + 1);
+    }
+
+    static  int deleteElement(int arr[], int size, int key) {
+        int pos = Arrays.binarySearch(arr, 0 , size, key);
+
+        if(pos == -1) {
+            System.out.println("No  key found for : " + key);
+            return pos;
+        }
+
+        //item to delete
+        int i = 0;
+        for(i = pos; i < size - 1; i++) {
+            arr[i] = arr[i + 1];
+        }
+        return size - 1;
+    }
+
+    public static void main(String[] arrgs) {
+
+        int arr[] = { 12, 16, 20, 40, 50,70};
+        int capacity = arr.length;
+        int n = 6;
+        int key = 26;
+
+        System.out.println("\nBefore  insertion: ");
+        for(int i = 0; i < arr.length; i++) {
+            System.out.printf("%d => ", arr[i]);   
+        }
+        insertSorted(arr, n, key, capacity);
+        System.out.printf("\nAfter Insert: \n");
+        for(int i = 0; i < arr.length; i++) {
+            System.out.printf("%d => ", arr[i]);   
+        }
+    }
+    
+}
+
+
+  ```
+
+  </p>
 </details>

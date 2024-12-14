@@ -3,6 +3,8 @@ package codechallenge.trees;
 import java.util.ArrayList;
 import java.util.List;
 
+import codechallenge.graph.Node;
+
 class Node {
     int data;
     Node left, right;

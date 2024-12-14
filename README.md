@@ -111,7 +111,7 @@ end
 </details>
 
 <details>
-<summary>Polynomial Time (Nested loops): O(n<sup>2</sup>) OR O(log(n))</summary>
+<summary>Polynomial Time/Quadratic (Nested loops): O(n<sup>2</sup>)</summary>
 
 ```java
 //Example to access 2D, 3D, 4D objects.
@@ -128,29 +128,6 @@ end
 
 </details>
 
-<details>
-    <summary>Exponential time: O(2<sup>n</sup>)</summary>
-
-```java
-
-
-```
-</details>
-
-<details>
-    <summary>Quadratic time: O(n<sup>2</sup>)</summary>
-
-```java
-
-
-```
-</details>
-
-## Space vs Time Complexity
-There is often a trade off between space and time complexity. Some algorithm use more space to achieve faster runtime, and vise versa.
----
-
-**Recursion can provide you with the fastest (logarithm) solution or some of the slowest (exponential). Therefore the use case for this is impmortant.**
 <details>
 <summary>Exponential Time: O(n<sup>2</sup>)</summary>
 
@@ -186,6 +163,13 @@ end
 
 ```
 </details>
+
+
+## Space vs Time Complexity
+There is often a trade off between space and time complexity. Some algorithm use more space to achieve faster runtime, and vise versa.
+---
+
+**Recursion can provide you with the fastest (logarithm) solution or some of the slowest (exponential). Therefore the use case for this is impmortant.**
 
 
 

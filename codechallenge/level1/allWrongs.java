@@ -24,7 +24,7 @@ In the first case the correct answers to the 33 questions are A, B, and A, in th
 In the second case the correct answers are all B, so you should answer each question with A.
  */
 
-package codechallenge;
+package codechallenge.level1;
 
 import java.util.*;
 

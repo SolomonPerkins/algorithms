@@ -22,7 +22,7 @@ arr = [2, 1, 2, 1, 2]
 output = [-1, -1, 4, 4, 8]
 The 3rd element of output is 2*2*1 = 4, the 4th is 2*2*1 = 4, and the 5th is 2*2*2 = 8.
  */
-package codechallenge;
+package codechallenge.level1;
 
 import java.util.Arrays;
 
@@ -46,15 +46,6 @@ public class largestTrippleProduct {
 
     return output;
   }
-
-
-
-
-
-
-
-
-
 
 
 

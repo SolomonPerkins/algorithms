@@ -28,7 +28,7 @@ Sample Explanation
 In the first case, 33 of the 66 cells in the grid contain battleships. Therefore, the probability that your shot will hit one of them is 3/6=0.53/6=0.5.
 In the second case, all 44 cells contain battleships, resulting in a probability of 1.01.0 of hitting a battleship.
  */
-package codechallenge;
+package codechallenge.level1;
 
 public class battleship {
 

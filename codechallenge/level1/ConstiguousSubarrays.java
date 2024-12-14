@@ -28,7 +28,7 @@ Explanation:
 So, the answer for the above input is [1, 3, 1, 5, 1]
  */
 
-package codechallenge;
+package codechallenge.level1;
 
 import java.util.HashMap;
 

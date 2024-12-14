@@ -1,3 +1,4 @@
+package codechallenge.search;
 import java.util.logging.Logger;
 import java.util.Arrays;
 

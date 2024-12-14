@@ -37,12 +37,37 @@ Three additional diners may sit at seats 44, 88, and 1010 without violating the 
 In the second case, only 11 additional diner is able to join the table, by sitting in any of the first 33 seats.
  */
 
-package codechallenge;
+package codechallenge.level1;
 
-public class cafeteria {
-    public long getMaxAdditionalDinersCount(long N, long K, int M, long[] S) {
-        // Write your code here
-        return 0L;
-      }
-      
+import java.util.Arrays;
+import java.util.HashMap;
+
+class Solution {
+  
+  public long getMaxAdditionalDinersCount(long N, long K, int M, long[] S) {
+// Write your code here
+        if(S.length == 0) {
+            return N / (K + 1);
+        }
+
+        HashMap<Integer, Boolean> adjacent = new HashMap<>();
+        long available = 0;
+        Arrays.sort(S);
+        //for each occupany if it they are adjacent make a note of it.
+        for(int i = 0; i < S.length - 1; i++) {
+            Boolean directlyNextTo = (S[i] + 2 == S[i+1]);
+            if(directlyNextTo) {
+            adjacent.put(i, directlyNextTo);
+            }
+        }
+        
+        
+        
+        
+            long occupiedCount  = S.length + (S.length * (K * 2));
+            available = ((N - occupiedCount) / (K *2));    
+        
+        return available +  1;
+  }
+  
 }

@@ -46,6 +46,7 @@ public class reverseOperation {
         // Write your code here
         Node temp = null;
         Node curr = head;
+        Node original = null;
         Stack<Node> stack = new Stack<>();
 
         while(curr != null) {

@@ -21,7 +21,7 @@ In the second minute you can eat 4 pieces of candy from another bag. That bag wi
 In the third minute you can eat the 3 pieces of candy that have appeared in the first bag that you ate.
 In total you can eat 7 + 4 + 3 = 14 pieces of candy.
  */
-package codechallenge;
+package codechallenge.level1;
 
 import java.util.*;
 
@@ -41,10 +41,6 @@ public class magicalCandyBags {
 
         return totalEatened;
       }
-    
-    
-    
-    
     
     
     

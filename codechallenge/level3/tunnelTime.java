@@ -1,10 +1,8 @@
-package codechallenge.level2;
+package codechallenge.level3;
 
 /**
  * 
  * SEE IMAGE: tunnelTime.png
- * 
- * 
  * 
  * There’s a circular train track with a circumference of CC metres. Positions along the track are measured in metres, clockwise from its topmost point. For example, the topmost point is position 00, 11 metre clockwise along the track is position 11, and 11 metre counterclockwise along the track is position C−1C−1.
 A train with negligible length runs clockwise along this track at a speed of 11 metre per second, starting from position 00. After CC seconds go by, the train will have driven around the entire track and returned to position 00, at which point it will continue going around again, with this process repeated indefinitely.
@@ -39,10 +37,9 @@ Expected Return Value = 35
 Sample Explanation
 In the first case, the train track (depicted below) has points 0...90...9, with one tunnel spanning the interval of positions [1,3][1,3] and another spanning [6,7][6,7]. In order to reach a tunnel time of 77, the train will need to go around the complete track twice and then stop at position 22. The total time taken in doing so is 10+10+2=2210+10+2=22 seconds.
 In the second case, the train's tunnel time will reach 1515 seconds after 3535 seconds have passed, right as the train exits tunnel 33 (having previously gone through tunnel 22).
+ * 
  */
+
 public class tunnelTime {
-    public long getSecondsElapsed(long C, int N, long[] A, long[] B, long K) {
-        // Write your code here
-        return 0L;
-      }
+    
 }

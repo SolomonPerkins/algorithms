@@ -1,7 +1,10 @@
 package codechallenge.level4;
 
 /**
- * A distribution center moves packages around using a system of conveyor belts, which can be represented as line segments on the 2D Cartesian plane. The iith conveyor belt runs from coordinates (Ai,Hi)(Ai​,Hi​) to (Bi,Hi)(Bi​,Hi​). No two conveyor belts share any points in common, including endpoints or interior points. Gravity points in the direction of the negative y-axis, meaning that objects normally fall vertically downwards, with their y-coordinate decreasing over time.
+ * SEE IMAGE: conveyorChaos.png 
+ * 
+ * 
+ A distribution center moves packages around using a system of conveyor belts, which can be represented as line segments on the 2D Cartesian plane. The iith conveyor belt runs from coordinates (Ai,Hi)(Ai​,Hi​) to (Bi,Hi)(Bi​,Hi​). No two conveyor belts share any points in common, including endpoints or interior points. Gravity points in the direction of the negative y-axis, meaning that objects normally fall vertically downwards, with their y-coordinate decreasing over time.
 Each conveyor belt runs to either the left or the right. A package can be considered to occupy a single point on the plane. If a package lands strictly within conveyor belt ii (excluding its endpoints), then it will be transported to its left or right end (either (Ai,Hi)(Ai​,Hi​) or (Bi,Hi)(Bi​,Hi​)), depending on the conveyor belt's direction, before continuing to fall vertically downwards.
 You'll start by selecting a single conveyor belt and choosing a fixed direction (either left or right) for it to run in. Then, random directions will be independently chosen for each of the remaining N−1N−1 conveyor belts (each being either left or right with equal probability). Finally, a single package will be dropped into the system from high above, at coordinates (x,1,000,000)(x,1,000,000), where xx is a real value drawn uniform randomly from the inclusive interval [0,1,000,000][0,1,000,000]. Your objective is to minimize the expected horizontal distance which this package will travel along conveyor belts before hitting the ground (any point with y-coordinate 00).
 For example, consider the following system of conveyor belts (as are present in the second sample case):

@@ -1,7 +1,10 @@
 package codechallenge.level3;
 
 /**
+ * SEE IMAGE: slipperyTrip.png
+ * 
  * URL: https://www.metacareers.com/profile/coding_puzzles?puzzle=2881982598796847
+ * 
  * There's a grid of cells with RR rows (numbered from 11 to RR from top to bottom) and CC columns (numbered from 11 to CC from left to right). The grid wraps around horizontally, meaning that column 11 is just to the right of column CC (and column CC is just to the left of column 11).
 The cell in row ii and column jj initially contains one of the following (indicated by the character Gi,jGi,j​):
 

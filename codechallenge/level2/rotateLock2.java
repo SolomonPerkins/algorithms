@@ -1,6 +1,8 @@
 package codechallenge.level2;
 
 /**
+ * SEE rotaryLock.png
+ * 
  * You're trying to open a lock. The lock comes with two wheels, each of which has the integers from 11 to NN arranged in a circle in order around it (with integers 11 and NN adjacent to one another). Each wheel is initially pointing at 11.
 For example, the following depicts the lock for N=10N=10 (as is presented in the second sample case).
 It takes 11 second to rotate a wheel by 11 unit to an adjacent integer in either direction, and it takes no time to select an integer once a wheel is pointing at it.

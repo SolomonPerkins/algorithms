@@ -39,35 +39,61 @@ In the second case, only 11 additional diner is able to join the table, by sitti
 
 package codechallenge.level1;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 
 class Solution {
   
-  public long getMaxAdditionalDinersCount(long N, long K, int M, long[] S) {
-// Write your code here
-        if(S.length == 0) {
-            return N / (K + 1);
-        }
+/**
+ * ANOTHER OPTION OF USIGN THE 
+ * identify available space = N / ((K + 1) * M)
+ * Edge cases: need to handle when items are at the end or close to the end.
+ */
 
-        HashMap<Integer, Boolean> adjacent = new HashMap<>();
-        long available = 0;
-        Arrays.sort(S);
-        //for each occupany if it they are adjacent make a note of it.
-        for(int i = 0; i < S.length - 1; i++) {
-            Boolean directlyNextTo = (S[i] + 2 == S[i+1]);
-            if(directlyNextTo) {
-            adjacent.put(i, directlyNextTo);
-            }
-        }
+ /**
+  * STRUCTURE | ALGORITHM
+  * 1. Sort to ascending
+    2. Base - Calculate space taken: 2K + 1 (2 times number of social distance + space occupied by customer)
+    3. Calculate available space for:
+      1. start to first seat
+      2. Between each diner
+      3. last diner to the end
+  * 
+  */
+
+
+
+  public long getMaxAdditionalDinersCount(long N, long K, int M, long[] S) {
+    // Write your code here
+    long additionalDiners = 0;
+    long socialDistance =  K + 1;
         
-        
-        
-        
-            long occupiedCount  = S.length + (S.length * (K * 2));
-            available = ((N - occupiedCount) / (K *2));    
-        
-        return available +  1;
+    if(S.length == 0) {
+      return (long) Math.round(N / (K + 1));
+    }
+    if(S.length == N) {
+      return 0;
+    }
+
+    Arrays.sort(S);
+
+    // left occupied size
+    additionalDiners += (S[0] - 1)/ socialDistance;
+
+    // end - start / (2k+1))
+    additionalDiners += (N - S[S.length - 1]) / socialDistance;
+
+    //for each occupany if it they are adjacent make a note of it.
+    for(int row = 0; row < (M - 1); row++) {
+        long diner1 = S[row];
+        long diner2 = S[row + 1];
+        additionalDiners += (diner2 - diner1 - socialDistance) / socialDistance;
+    }
+    
+    return additionalDiners;
+  
   }
   
 }

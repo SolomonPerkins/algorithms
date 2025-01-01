@@ -150,9 +150,9 @@ This is a type of tree and here are the details around it.
       (S)
 
 Creating a dictionary similar to below then perform your actions on it to help evaluate if it there is an occurance.
-| R|  E | R |
-| :-- | :-:|-:|
-| D | A | U  |
+| R | E | R |
+|:-:|:-:|:-:|
+| D | A | U |
 | F | D | L |
 | E | A | A |
 | D | M | M |

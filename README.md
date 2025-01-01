@@ -179,6 +179,9 @@ There is often a trade off between space and time complexity. Some algorithm use
 
 # Links
 1. [Useful Trips/Tricks](./cool-tips.md)
+2. [Techie Delight - Comprehensive list of problems](https://www.techiedelight.com)
+3. [Hackerrank](https://www.hackerrank.com/dashboard)
+4. [Project Euler - Mathematical](https://projecteuler.net)
 
 # References
 

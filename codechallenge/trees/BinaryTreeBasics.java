@@ -3,8 +3,6 @@ package codechallenge.trees;
 import java.util.ArrayList;
 import java.util.List;
 
-import codechallenge.graph.Node;
-
 class Node {
     int data;
     Node left, right;
@@ -18,6 +16,13 @@ class Node {
 /**
  * pre,in and post traversal
  * get height
+ * 
+ 
+              1 
+            /   \
+           2     3
+         /   \      
+        4      5        
  */
 public class BinaryTreeBasics {
     //Root node
@@ -113,5 +118,4 @@ public class BinaryTreeBasics {
         System.out.println("\nPostOrder Traversal:");
         tree.postOrderTraversal(tree.root, visited);
     }
-}
-
+}      
